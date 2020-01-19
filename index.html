@@ -20,19 +20,31 @@
               <div class="content">
                   <div class="banner-header">
                   <header class="header">
-                  <nav class="navbar">
-                      <ul class="list">
-                          <a href="#About"><li>About</li></a>
-                          <a href="#Projects"><li>Projects</li></a>
-                          <a href="#Experience"><li>Experience</li></a>
-                          <a href="https://github.com/Kat2bk" target="_blank"><li><i style="color: white" class="fab fa-github"></i></li></a>
-                          <a href="#"><li><i style="color: white" class="fab fa-twitter"></i></li></a>
-                          <a href="#"><li><i style="color: white" class="fab fa-blogger"></i></li></a>
-                          <a href="mailto:Katherine2bk@gmail.com?Subject:Hello%20there"><li><i style="color: white" class="fas fa-envelope-open-text"></i></li></a>
-                      </ul>
-                  </nav>
+                    <nav class="navbar">
+                        <ul class="list">
+                            <a href="#About"><li>About</li></a>
+                            <a href="#Projects"><li>Projects</li></a>
+                            <a href="#Experience"><li>Experience</li></a>
+                            <a href="https://github.com/Kat2bk" target="_blank"><li><i style="color: white" class="fab fa-github"></i></li></a>
+                            <a href="#"><li><i style="color: white" class="fab fa-twitter"></i></li></a>
+                            <a href="#"><li><i style="color: white" class="fab fa-blogger"></i></li></a>
+                            <a href="mailto:Katherine2bk@gmail.com?Subject:Hello%20there"><li><i style="color: white" class="fas fa-envelope-open-text"></i></li></a>
+                            <a href="#"><li><i style="color: white" class="far fa-file"></i></li></a>
+                        </ul>
+                    </nav>
                   </header>
+
                   <div class="welcome">
+
+                    <div class="audio">
+                        <audio id="player" src="/MP3/Night_Sounds_-_Crickets-Lisa_Redfern-591005346.mp3"></audio>
+                        <div> 
+                        <button onclick="document.getElementById('player').play()">Play</button> 
+                        <button onclick="document.getElementById('player').pause()">Pause</button> 
+                        <button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
+                        <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
+                        </div>
+    
                     <div class="banner">
                         <img src="./IMAGES/Katherine_logo.png">
                       </div>
@@ -46,7 +58,7 @@
             <div class="starSeven stars"></div>
             <div class="starEight stars"></div>
             <div class="meTitle">
-                <h3>a little about me</h3>
+                <h3 style="font-size: 30px">A <span style="font-size: 15px">little</span> About Me</h3>
                     </div>
 
                  <section id="About">
@@ -69,7 +81,7 @@
             <section id="Projects">
                 <div class="starThree stars"></div>
                 <div class="placeholder1">
-                    <h3>Front page of Bnb App</h3>
+                    <h3>Front Page of Bnb App</h3>
                 <a href="https://github.com/AirBnB-dream-team"><img src="./IMAGES/buildweek_website.PNG" id="projectimage"></a>
                 <p>I built the UI for an Airbnb style app. I worked with a wonderful team of React and Data Scientists who did the backend.</p>
             </div>
@@ -81,7 +93,7 @@
             </div>
             </section>
 
-            <div class="exTitle">
+            <div class="exTitle" id="Experience">
                 <h3 style="font-size: 50px">Experience</h3>
                 <h4>Here's what I've learned so far!</h4>
                 </div>
@@ -92,25 +104,31 @@
                 <div class="codeIcons">
                 <div class="HTML">
                     <img src="./IMAGES/html_logo.png">
+                    <div class="progressBar">
+                        <span style="width: 65.72%"></span>
+                    </div>
                 </div>
                 <div class="CSS">
                     <img src="./IMAGES/css_logo.png">
+                    <div class="progressBar">
+                        <span style="width: 40%"></span>
+                    </div>
                 </div>
                 <div class="JAVA">
                     <img src="./IMAGES/javascript_logo.png">
+                <div class="progressBar">
+                    <span style="width: 15%"></span>
+                </div>
+
                 </div>
                 </div>
             </div>
 
-            <div class="audio">
-            <!-- <audio controls autoplay>
-                <source src="/MP3/Night_Sounds_-_Crickets-Lisa_Redfern-591005346.mp3" type="audio/mpeg">
-              </audio> -->
-              </div>
-              <link rel="stylesheet" href="/JS/index.js"></script>
+            <link rel="stylesheet" href="/JS/index.js">
+
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
               <script>
-              
               function showTheStuff() {
                 var button = document.getElementById("showMe");
                 if (button.style.display === "none") {
@@ -118,6 +136,8 @@
                 } else {
                   button.style.display = "none";
                 }
+
+                window.location="index.html#showMe";
               }
               </script>
           </body>
