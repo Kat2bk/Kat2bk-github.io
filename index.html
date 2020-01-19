@@ -65,7 +65,7 @@
                         <div class="starTwo stars"></div>
                       </div>
             </section>
-            <h3>Here's What I've done!</h3>
+            <h3 style="font-size: 30px">Here's What I've done!</h3>
             <section id="Projects">
                 <div class="starThree stars"></div>
                 <div class="placeholder1">
@@ -80,9 +80,16 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, omnis voluptas eaque maxime ipsum adipisci, quo nam tenetur error assumenda minima. Deserunt architecto id ab temporibus reiciendis natus eveniet eum.</p>
             </div>
             </section>
-            <h3>Experience</h3>
+
+            <div class="exTitle">
+                <h3 style="font-size: 50px">Experience</h3>
                 <h4>Here's what I've learned so far!</h4>
-            <section id="Experience">
+                </div>
+
+                <button onclick="showTheStuff()">Click to see!</button>
+            
+            <div id="showMe">
+                <div class="codeIcons">
                 <div class="HTML">
                     <img src="./IMAGES/html_logo.png">
                 </div>
@@ -92,16 +99,26 @@
                 <div class="JAVA">
                     <img src="./IMAGES/javascript_logo.png">
                 </div>
+                </div>
             </div>
-            </section>
-            </div>
+
             <div class="audio">
             <!-- <audio controls autoplay>
                 <source src="/MP3/Night_Sounds_-_Crickets-Lisa_Redfern-591005346.mp3" type="audio/mpeg">
               </audio> -->
               </div>
-              <script type="text/javascript" src="/JS/index.js"></script>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/TextPlugin.min.js"></script>
+              <link rel="stylesheet" href="/JS/index.js"></script>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+              <script>
+              
+              function showTheStuff() {
+                var button = document.getElementById("showMe");
+                if (button.style.display === "none") {
+                  button.style.display = "block";
+                } else {
+                  button.style.display = "none";
+                }
+              }
+              </script>
           </body>
         </html>
