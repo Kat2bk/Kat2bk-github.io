@@ -41,28 +41,6 @@ blockquote {
   font-size: 40px;
   line-height: 4rem;
   font-family: "Pacifico", sans-serif;
-  overflow: hidden;
-  backface-visibility: hidden;
-  perspective: 1000;
-  transform: translate3d(0, 0, 0);
-
-  div {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-
-  div:first-of-type {
-    opacity: 0;
-  }
-
-  div:last-of-type {
-    width: 0px;
-  }
-
-  div:last-of-type span {
-    margin-left: -355px;
-  }
 }
 
 // blinking star animation
@@ -103,6 +81,14 @@ blockquote {
   left: 80%;
   animation-name: sparkle;
   animation-duration: 1.3s;
+}
+
+.starTwo {
+  position: absolute;
+  left: 14%;
+  top: 40%;
+  animation-name: sparkle;
+  animation-duration: 1.1s;
 }
 
 @keyframes sparkle {
