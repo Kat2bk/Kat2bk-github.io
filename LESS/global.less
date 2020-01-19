@@ -3,39 +3,111 @@
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 html {
-    font-size: 62.5%;
-  }
+  font-size: 62.5%;
+}
 
-  body {
-    line-height: 1.6rem;
-    font-family: Ariel, sans-serif;
-    background-color: #22150C;
-    font-size: 2rem;
-  }
+body {
+  line-height: 1.6rem;
+  font-family: Ariel, sans-serif;
+  background-color: #22150c;
+  font-size: 2rem;
+  background-image: url("/IMAGES/nightsky.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+}
 
-  img {
-    max-width: 100%;
-    margin: 0 auto;
-    display: block;
-    width: 500px;
-  }
+img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
 
-  
 strong {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 0 auto 40px auto;
+  max-width: 500px;
+  text-align: left;
+  font-size: 40px;
+  line-height: 4rem;
+  font-family: "Pacifico", sans-serif;
+  overflow: hidden;
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform: translate3d(0, 0, 0);
+
+  div {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
   }
-  
-  blockquote {
-    font-style: italic;
-    margin: 0 auto 40px auto;
-    max-width: 500px;
-    text-align: left;
+
+  div:first-of-type {
+    opacity: 0;
   }
+
+  div:last-of-type {
+    width: 0px;
+  }
+
+  div:last-of-type span {
+    margin-left: -355px;
+  }
+}
+
+// blinking star animation
+
+.stars {
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+}
+
+.starSeven {
+  margin-top: 10%;
+  margin-left: 30%;
+  animation-name: sparkle;
+  animation-duration: 3s;
+}
+
+.starEight {
+  margin-top: 1%;
+  margin-left: 48%;
+  animation-name: sparkle;
+  animation-duration: 2s;
+}
+
+.starOne {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  animation-name: sparkle;
+  animation-duration: 1.5s;
+}
+
+.starNine {
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  animation-name: sparkle;
+  animation-duration: 1.3s;
+}
+
+@keyframes sparkle {
+  60% {
+    transform: scale(0.5);
+    opacity: 0.3;
+  }
+}
