@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="katherine kumar, front-end, website" />
+    <meta name="author" content="Katherine Kumar" />
+    <link rel="icon" type="image" href="./IMAGES/favicon (1).ico" />
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f42eef6b89.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+        
+        <html>
+          <body>
+              <div class="content">
+                  <div class="banner-header">
+                  <header class="header">
+                    <nav class="navbar">
+                        <ul class="list">
+                            <a href="#About"><li>About</li></a>
+                            <a href="#Projects"><li>Projects</li></a>
+                            <a href="#Experience"><li>Experience</li></a>
+                            <a href="https://github.com/Kat2bk" target="_blank"><li><i style="color: white" class="fab fa-github"></i></li></a>
+                            <a href="#"><li><i style="color: white" class="fab fa-twitter"></i></li></a>
+                            <a href="#"><li><i style="color: white" class="fab fa-blogger"></i></li></a>
+                            <a href="mailto:Katherine2bk@gmail.com?Subject:Hello%20there"><li><i style="color: white" class="fas fa-envelope-open-text"></i></li></a>
+                            <a href="#"><li><i style="color: white" class="far fa-file"></i></li></a>
+                        </ul>
+                    </nav>
+                  </header>
+
+                  <div class="welcome">
+
+                    <div class="audio">
+                        <audio id="player" src="/MP3/Night_Sounds_-_Crickets-Lisa_Redfern-591005346.mp3"></audio>
+                        <div> 
+                        <button onclick="document.getElementById('player').play()">Play</button> 
+                        <button onclick="document.getElementById('player').pause()">Pause</button> 
+                        <button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
+                        <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
+                        </div>
+    
+                    <div class="banner">
+                        <img src="./IMAGES/Katherine_logo.png">
+                      </div>
+                      <div id="upperWrap">
+            <div id="upper">Hi, welcome!</div>
+            </div>
+            <div id="line"></div>
+            <div id="lowerWrap">
+            <div id="lower">I like to build things.</div>
+            </div>
+            <div class="starSeven stars"></div>
+            <div class="starEight stars"></div>
+            <div class="meTitle">
+                <h3 style="font-size: 30px">A <span style="font-size: 15px">little</span> About Me</h3>
+                    </div>
+
+                 <section id="About">
+                <div id="img-me">
+                    <img src="./IMAGES/Katherine_pic.jpg" alt="profile picture" id="image-2">
+                </div>
+                <div class="starOne stars"></div>
+                <div class="starNine stars"></div>
+                <div class="paragraph">
+                <p>Hi! My name is Katherine. I'm an aspiring web developer. I'm currently a Lambda student of nearly two months and am working hard to upgrade my skills everyday. On the off chance I'm not busy - I enjoy writing historical fantasy.</p>
+                </div>
+            </section>
+            <section id="#quotation">
+                    <div class="quote">
+                        <p><blockquote><div>Learning...<br><br></div><div><span>...is the only thing the mind never exhausts, never fears, and never regrets.<br> -Leonardo Da Vinci</span></div></blockquote></p>
+                        <div class="starTwo stars"></div>
+                      </div>
+            </section>
+            <h3 style="font-size: 30px">Here's What I've done!</h3>
+            <section id="Projects">
+                <div class="starThree stars"></div>
+                <div class="placeholder1">
+                    <h3>Front Page of Bnb App</h3>
+                <a href="https://github.com/AirBnB-dream-team"><img src="./IMAGES/buildweek_website.PNG" id="projectimage"></a>
+                <p>I built the UI for an Airbnb style app. I worked with a wonderful team of React and Data Scientists who did the backend.</p>
+            </div>
+            <div class="placeholder2">
+                <div class="projectimage2">
+                <i class="fas fa-image fa-5x" id="projectimage2"></i>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, omnis voluptas eaque maxime ipsum adipisci, quo nam tenetur error assumenda minima. Deserunt architecto id ab temporibus reiciendis natus eveniet eum.</p>
+            </div>
+            </section>
+
+            <div class="exTitle" id="Experience">
+                <h3 style="font-size: 50px">Experience</h3>
+                <h4>Here's what I've learned so far!</h4>
+                </div>
+
+                <button onclick="showTheStuff()">Click to see!</button>
+            
+            <div id="showMe">
+                <div class="codeIcons">
+                <div class="HTML">
+                    <img src="./IMAGES/html_logo.png">
+                    <div class="progressBar">
+                        <span style="width: 65.72%"></span>
+                    </div>
+                </div>
+                <div class="CSS">
+                    <img src="./IMAGES/css_logo.png">
+                    <div class="progressBar">
+                        <span style="width: 40%"></span>
+                    </div>
+                </div>
+                <div class="JAVA">
+                    <img src="./IMAGES/javascript_logo.png">
+                <div class="progressBar">
+                    <span style="width: 15%"></span>
+                </div>
+
+                </div>
+                </div>
+            </div>
+
+            <link rel="stylesheet" href="/JS/index.js">
+
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+              <script>
+              function showTheStuff() {
+                var button = document.getElementById("showMe");
+                if (button.style.display === "none") {
+                  button.style.display = "block";
+                } else {
+                  button.style.display = "none";
+                }
+
+                window.location="index.html#showMe";
+              }
+              </script>
+          </body>
+        </html>

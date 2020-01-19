@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(0, 0, 2);
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 999;
+  opacity: 0.9;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  a {
+    color: white;
+    display: block;
+    font-size: 2rem;
+  }
+
+  li {
+    padding: 30px 15px;
+    display: block;
+    width: 100%;
+  }
+
+  li:hover {
+    background-color: @primary-dark;
+    color: @primary-skintone;
+  }
+}
